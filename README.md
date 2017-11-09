@@ -8,7 +8,7 @@ The provided Package helps store merchants to redirect customers to the Paytm Pa
 The aim of this document is to explain the procedure of installation and configuration of the Plugin on the merchant website.
 
 # Installation
-- Unzip and copy the "paytm_payments" folder directly to the extensions folder of your website i.e "website_root/extensions/".
+- Copy the "paytm_payments" folder directly to the extensions folder of your website i.e "website_root/extensions/".
 
 
 # Configuration
