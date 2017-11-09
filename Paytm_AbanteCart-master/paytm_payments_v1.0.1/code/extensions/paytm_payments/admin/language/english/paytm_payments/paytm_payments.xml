@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<definitions>
+  <definition>
+    <key>paytm_payments_name</key>
+    <value><![CDATA[Paytm Wallet]]></value>
+  </definition>
+  <definition>
+    <key>text_payment</key>
+    <value><![CDATA[Payment]]></value>
+  </definition>
+  <definition>
+    <key>text_success</key>
+    <value><![CDATA[Settings has been updated!]]></value>
+  </definition>  
+  <definition>
+    <key>paytm_payments_test_live</key>
+    <value><![CDATA[Production]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_test_test</key>
+    <value><![CDATA[Test]]></value>
+  </definition>  
+  <definition>
+    <key>paytm_payments_callback</key>
+    <value><![CDATA[Callback Mode:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_callback_enable</key>
+    <value><![CDATA[Enable]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_callback_disable</key>
+    <value><![CDATA[Disable]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_merchant_key</key>
+    <value><![CDATA[Merchant Key:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_merchant_industry</key>
+    <value><![CDATA[Industry Type:]]></value>
+  </definition>  
+  <definition>
+    <key>paytm_payments_merchant_mid</key>
+    <value><![CDATA[Merchant MID:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_merchant_website</key>
+    <value><![CDATA[Website:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_test</key>
+    <value><![CDATA[Paytm Environment:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_order_status_id</key>
+    <value><![CDATA[Order Status:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_location_id</key>
+    <value><![CDATA[Location:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_location_id_0</key>
+    <value><![CDATA[All Locations]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_status</key>
+    <value><![CDATA[Status:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_sort_order</key>
+    <value><![CDATA[Sort Order:<br /><span class="help">Number indicates display position of paytm payment gateway</span>]]></value>
+  </definition>
+  	<definition>
+    	<key>paytm_payments_autoselect</key>
+    	<value><![CDATA[Auto Select:<br /><span class="help">This payment method will be selected automatically</span>]]></value>
+  	</definition>	
+  <definition>
+    <key>error_permission</key>
+    <value><![CDATA[Warning: You do not have permission to modify Paytm payment!]]></value>
+  </definition>
+  <definition>
+    <key>error_merchant</key>
+    <value><![CDATA[Merchant id Required!]]></value>
+  </definition>
+</definitions>
