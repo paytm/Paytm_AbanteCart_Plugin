@@ -49,6 +49,14 @@
     <value><![CDATA[Website:]]></value>
   </definition>
   <definition>
+    <key>paytm_payments_merchant_transaction_url</key>
+    <value><![CDATA[Transaction URL:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_merchant_transaction_status_url</key>
+    <value><![CDATA[Transaction Status URL:]]></value>
+  </definition>
+  <definition>
     <key>paytm_payments_test</key>
     <value><![CDATA[Paytm Environment:]]></value>
   </definition>

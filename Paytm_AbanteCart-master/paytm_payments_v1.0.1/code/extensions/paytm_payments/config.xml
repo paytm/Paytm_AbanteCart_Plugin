@@ -26,13 +26,21 @@
             <type required="true">input</type>
             <default_value></default_value>
         </item>
-        <item id="paytm_payments_test">
+        <item id="paytm_payments_merchant_transaction_url">
+            <type required="true">input</type>
+            <default_value></default_value>
+        </item>
+        <item id="paytm_payments_merchant_transaction_status_url">
+            <type required="true">input</type>
+            <default_value></default_value>
+        </item>
+        <!-- <item id="paytm_payments_test">
             <type>selectbox</type>
 			<variants>
 				<item>live</item>
 				<item>test</item>
 			</variants>
-        </item>
+        </item> -->
 		<item id="paytm_payments_callback">
             <type>selectbox</type>
 			<variants>
