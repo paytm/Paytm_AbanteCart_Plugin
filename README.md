@@ -15,3 +15,24 @@ The aim of this document is to explain the procedure of installation and configu
 - Log in to your Admin panel and locate the Paytm Wallet module in the Payment method section.
 - Click on Install button to install it.
 - Configure the required details like MID, Key, Website etc.
+
+# PG & PGP URL Details
+	OLTP (PG)
+		staging	
+			Transaction URL 			=> https://pguat.paytm.com/oltp-web/processTransaction
+			Transaction Status Url 		=> https://pguat.paytm.com/oltp/HANDLER_INTERNAL/getTxnStatus
+
+		Production
+			Transaction URL 			=> https://secure.paytm.in/oltp-web/processTransaction
+			Transaction Status Url 		=> https://secure.paytm.in/oltp/HANDLER_INTERNAL/getTxnStatus
+
+
+
+	THEIA (PGP)
+		staging	
+			Transaction URL 			=> https://securegw-stage.paytm.in/theia/processTransaction
+			Transaction Status Url 		=> https://securegw-stage.paytm.in/merchant-status/getTxnStatus
+
+		Production
+			Transaction URL 			=> https://securegw.paytm.in/theia/processTransaction
+			Transaction Status Url 		=> https://securegw.paytm.in/merchant-status/getTxnStatus
