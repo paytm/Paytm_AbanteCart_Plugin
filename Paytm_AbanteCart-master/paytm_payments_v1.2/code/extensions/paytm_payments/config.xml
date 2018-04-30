@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <extension>
     <id>paytm_payments</id>
-    <version>1.0</version>
+    <version>1.1</version>
 	<type>payment</type>
 	<category>payment</category>
     <cartversions>
-        <item>1.1</item>
+        <item>1.2</item>
     </cartversions>
     <layout></layout>
     <priority>10</priority>
@@ -26,6 +26,17 @@
             <type required="true">input</type>
             <default_value></default_value>
         </item>
+        <!-- <item id="paytm_payments_custom_callbackurl">
+            <type>selectbox</type>
+            <variants>
+                <item>Yes</item>
+                <item>No</item>
+            </variants>
+        </item> -->
+        <item id="paytm_payments_callback_url">
+            <type>input</type>
+            <default_value> </default_value>
+        </item>
         <item id="paytm_payments_merchant_transaction_url">
             <type required="true">input</type>
             <default_value></default_value>
@@ -41,13 +52,13 @@
 				<item>test</item>
 			</variants>
         </item> -->
-		<item id="paytm_payments_callback">
+		<!-- <item id="paytm_payments_callback">
             <type>selectbox</type>
 			<variants>
 				<item>enable</item>
 				<item>disable</item>
 			</variants>
-        </item>
+        </item> -->
         <item id="paytm_payments_order_status_id">
             <type>selectbox</type>
 			<variants>

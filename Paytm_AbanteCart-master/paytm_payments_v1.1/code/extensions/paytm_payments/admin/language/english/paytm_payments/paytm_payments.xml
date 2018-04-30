@@ -48,6 +48,24 @@
     <key>paytm_payments_merchant_website</key>
     <value><![CDATA[Website:]]></value>
   </definition>
+
+  <definition>
+    <key>paytm_payments_custom_callbackurl</key>
+    <value><![CDATA[Custom CallbackURL:]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_custom_callbackurl_Yes</key>
+    <value><![CDATA[Yes]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_custom_callbackurl_No</key>
+    <value><![CDATA[No]]></value>
+  </definition>
+  <definition>
+    <key>paytm_payments_callback_url</key>
+    <value><![CDATA[Custom Callback URL (if you want):]]></value>
+  </definition>
+
   <definition>
     <key>paytm_payments_merchant_transaction_url</key>
     <value><![CDATA[Transaction URL:]]></value>
