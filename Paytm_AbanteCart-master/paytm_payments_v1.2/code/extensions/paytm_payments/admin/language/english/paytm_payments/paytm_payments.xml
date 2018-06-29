@@ -50,16 +50,32 @@
   </definition>
 
   <definition>
-    <key>paytm_payments_custom_callbackurl</key>
-    <value><![CDATA[Custom CallbackURL:]]></value>
+    <key>promocode_status</key>
+    <value><![CDATA[PromoCode Status:]]></value>
   </definition>
   <definition>
-    <key>paytm_payments_custom_callbackurl_Yes</key>
-    <value><![CDATA[Yes]]></value>
+    <key>promocode_status_enabled</key>
+    <value><![CDATA[Enabled]]></value>
   </definition>
   <definition>
-    <key>paytm_payments_custom_callbackurl_No</key>
-    <value><![CDATA[No]]></value>
+    <key>promocode_status_disabled</key>
+    <value><![CDATA[Disabled]]></value>
+  </definition>
+  <definition>
+    <key>promocode_local_validation</key>
+    <value><![CDATA[PromoCode Local Validation]]></value>
+  </definition>
+  <definition>
+    <key>promocode_local_validation_enabled</key>
+    <value><![CDATA[Enabled]]></value>
+  </definition>
+  <definition>
+    <key>promocode_local_validation_disabled</key>
+    <value><![CDATA[Disabled]]></value>
+  </definition>
+  <definition>
+    <key>promocode_value</key>
+    <value><![CDATA[PromoCode Value]]></value>
   </definition>
   <definition>
     <key>paytm_payments_callback_url</key>
@@ -98,10 +114,10 @@
     <key>paytm_payments_sort_order</key>
     <value><![CDATA[Sort Order:<br /><span class="help">Number indicates display position of paytm payment gateway</span>]]></value>
   </definition>
-  	<definition>
-    	<key>paytm_payments_autoselect</key>
-    	<value><![CDATA[Auto Select:<br /><span class="help">This payment method will be selected automatically</span>]]></value>
-  	</definition>	
+    <definition>
+      <key>paytm_payments_autoselect</key>
+      <value><![CDATA[Auto Select:<br /><span class="help">This payment method will be selected automatically</span>]]></value>
+    </definition> 
   <definition>
     <key>error_permission</key>
     <value><![CDATA[Warning: You do not have permission to modify Paytm payment!]]></value>
