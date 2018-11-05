@@ -49,9 +49,6 @@ class ControllerResponsesExtensionPaytmpayments extends AController {
 		if ($template_data['PAYTM_ENVIRONMENT'] == 'live') {
 			$PAYTM_DOMAIN = 'secure.paytm.in';
 		}
-		// $template_data['PAYTM_REFUND_URL']='https://'.$PAYTM_DOMAIN.'/oltp/HANDLER_INTERNAL/REFUND';
-		/*$template_data['PAYTM_STATUS_QUERY_URL']='https://'.$PAYTM_DOMAIN.'/oltp/HANDLER_INTERNAL/TXNSTATUS';
-		$template_data['PAYTM_TXN_URL']='https://'.$PAYTM_DOMAIN.'/oltp-web/processTransaction';*/
 		$template_data['PAYTM_STATUS_QUERY_URL']=$template_data['PAYTM_TRANSACTION_STATUS_URL'];
 		$template_data['PAYTM_TXN_URL']=$template_data['PAYTM_TRANSACTION_URL'];
         $paramList["MID"] = $template_data['MID'];
@@ -63,14 +60,11 @@ class ControllerResponsesExtensionPaytmpayments extends AController {
 		$paramList["WEBSITE"] = $template_data['WEBSITE'];
 		
 		$template_data['CALLBACK_URL'] =$template_data['PAYTM_MERCHANT_CALLBACK_URL']!=''?$template_data['PAYTM_MERCHANT_CALLBACK_URL']:$this->html->getSecureURL('extension/paytm_payments/callback');
-		/*if($template_data['PAYTM_MERCHANT_CUSTOM_CALLBACKURL']=='Yes'){
-		}*/
 		$paramList["CALLBACK_URL"] = $template_data['CALLBACK_URL'];
 
 		$template_data['customCallbackUrl']=$template_data['PAYTM_MERCHANT_CUSTOM_CALLBACKURL'];
 		$template_data['callBackUrl']=$template_data['PAYTM_MERCHANT_CALLBACK_URL'];
 		$checkSum = getChecksumFromArray($paramList, $this->config->get('paytm_payments_merchant_key'));
-		//echo $this->config->get('paytm_payments_merchant_key'); die;
 		$template_data['CHECKSUMHASH']=$checkSum;
 		$this->load->library('encryption');
 		$encryption = new AEncryption($this->config->get('encryption_key'));
@@ -122,13 +116,6 @@ class ControllerResponsesExtensionPaytmpayments extends AController {
 				
 				$requestParamList['CHECKSUMHASH'] = $StatusCheckSum;
 				
-				// Call the PG's getTxnStatus() function for verifying the transaction status.
-				
-				/*if($this->config->get('paytm_payments_test') == "live") {
-					$check_status_url = 'https://secure.paytm.in/oltp/HANDLER_INTERNAL/getTxnStatus';
-				} else {
-					$check_status_url = 'https://pguat.paytm.com/oltp/HANDLER_INTERNAL/getTxnStatus';
-				}*/
 				$check_status_url = $this->config->get('paytm_payments_merchant_transaction_status_url');
 				
 				$responseParamList = callNewAPI($check_status_url, $requestParamList);
@@ -214,10 +201,11 @@ class ControllerResponsesExtensionPaytmpayments extends AController {
 
 		}else{ 
 			// this site homepage URL
+			$check_status_url = $this->config->get('paytm_payments_merchant_transaction_status_url');
 			$testing_urls = array(
 				$this->html->getSecureURL(),
 				"www.google.co.in",
-				"https://pguat.paytm.com/oltp/HANDLER_INTERNAL/getTxnStatus"
+				$check_status_url
 			);
 			// loop over all URLs, maintain debug log for each response received
 			foreach($testing_urls as $key=>$url){
