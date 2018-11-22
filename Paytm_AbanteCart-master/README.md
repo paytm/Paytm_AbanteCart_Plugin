@@ -15,3 +15,5 @@ The aim of this document is to explain the procedure of installation and configu
 - Log in to your Admin panel and locate the Paytm Wallet module in the Payment method section.
 - Click on Install button to install it.
 - Configure the required details like MID, Key, Website etc.
+
+See Video : https://www.youtube.com/watch?v=Dz1nYrd-5e4
