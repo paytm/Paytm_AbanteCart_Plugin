@@ -104,6 +104,8 @@ class ControllerResponsesExtensionPaytmpayments extends AController {
         }
         $template_data['TXN_TOKEN'] = $txnToken;
         $template_data['PAYTM_MSG'] = $paytm_msg;
+        $template_data['PLUGIN_VERSION'] = PaytmConstants::PLUGIN_VERSION;
+        $template_data['VERSION_BUILT'] = VERSION_BUILT;
         //  End Txn Token //
         $this->view->batchAssign($template_data);
         $this->processTemplate('responses/paytm_payments.tpl');

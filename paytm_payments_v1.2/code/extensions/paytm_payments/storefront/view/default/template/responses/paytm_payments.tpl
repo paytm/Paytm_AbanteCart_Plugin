@@ -41,7 +41,7 @@
  
 	<div class="form-group action-buttons">
     	<div class="col-md-12">
-			<button class="btn btn-orange pull-right" title="<?php echo $button_confirm; ?>" id="checkoutJS" onClick="openJsCheckout();"  type="button">
+			<button class="btn btn-orange pull-right" title="<?php echo $button_confirm; ?>" id="checkoutJS"  type="button">
 				<i class="fa fa-check"></i>
 				<?php echo $button_confirm; ?>
 			</button>
@@ -75,6 +75,10 @@ var loader = '<div id="paytm-pg-spinner" class="paytm-pg-loader"><div class="bou
                         },
                         "merchant": {
                             "redirect": true
+                        },
+                        "integration": {
+                            "platform": "Abantecart",
+                            "version": "<?php echo $VERSION_BUILT; ?>|<?php echo $PLUGIN_VERSION; ?>"
                         },
                         "handler": {
                            

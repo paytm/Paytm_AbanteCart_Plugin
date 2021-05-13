@@ -48,8 +48,9 @@ class ModelExtensionPaytmpayments extends Model {
 		if ($status) {  
       		$method_data = array( 
         		'id'         => 'paytm_payments',
-        		'title'      => $this->language->get('text_title'),
-				'sort_order' => $this->config->get('paytm_payments_sort_order')
+        		//'title'      => $this->language->get('text_title'),
+				    'sort_order' => $this->config->get('paytm_payments_sort_order'),
+            'icon' => array('resource_code' => '<img src="extensions/paytm_payments/image/paytm.png">'),
       		);
     	}
    
