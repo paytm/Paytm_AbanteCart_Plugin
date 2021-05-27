@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <extension>
     <id>paytm_payments</id>
-    <version>1.2.16</version>
+    <version>1.2.18</version>
     <type>payment</type>
     <category>payment</category>
     <cartversions>
