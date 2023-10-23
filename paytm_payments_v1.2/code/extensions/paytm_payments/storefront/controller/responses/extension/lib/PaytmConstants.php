@@ -6,6 +6,9 @@ class PaytmConstants{
 
 	CONST PRODUCTION_HOST						= "https://securegw.paytm.in/";
 	CONST STAGING_HOST							= "https://securegw-stage.paytm.in/";
+	CONST PRODUCTION_PPBL_HOST						= "https://securepg.paytm.in/";
+
+    CONST PPBL = false;	
 
 	CONST ORDER_PROCESS_URL						= "order/process";
 	CONST ORDER_STATUS_URL						= "v3/order/status";
@@ -21,8 +24,8 @@ class PaytmConstants{
 	CONST CONNECT_TIMEOUT						= 10;
 	CONST TIMEOUT								= 10;
 
-	CONST LAST_UPDATED							= "20230830";
-	CONST PLUGIN_VERSION						= "1.2.19";
+	CONST LAST_UPDATED							= "20231009";
+	CONST PLUGIN_VERSION						= "1.2.20";
 
 	CONST CUSTOM_CALLBACK_URL					= "";
 

@@ -89,7 +89,7 @@ class ControllerResponsesExtensionPaytmpayments extends AController {
         );
 
         
-        $apiURL = PaytmHelper::getPaytmURL(PaytmConstants::INITIATE_TRANSACTION_URL, $PAYTM_ENV) . '?mid='.$template_data["MID"].'&orderId='.$template_data["ORDER_ID"];
+        $apiURL = PaytmHelper::getPaytmURL(PaytmConstants::INITIATE_TRANSACTION_URL, $PAYTM_ENV, $template_data["MID"]) . '?mid='.$template_data["MID"].'&orderId='.$template_data["ORDER_ID"];
         $post_data_string = json_encode($paytmParams, JSON_UNESCAPED_SLASHES);
         $headers = array("Content-Type: application/json");
         $response_array = PaytmHelper::executecUrl($apiURL, $post_data_string);
