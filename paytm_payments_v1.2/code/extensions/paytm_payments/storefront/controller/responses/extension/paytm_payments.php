@@ -139,9 +139,9 @@ class ControllerResponsesExtensionPaytmpayments extends AController {
         $PAYTM_MERCHANT_KEY = $this->config->get('paytm_payments_merchant_key');
         $template_data['PAYTM_ENVIRONMENT'] = $this->config->get('environment_status');
         if ($template_data['PAYTM_ENVIRONMENT'] == 'live') {
-        $PAYTM_DOMAIN_THEIA = 'https://securegw.paytm.in/';
+        $PAYTM_DOMAIN_THEIA = 'https://secure.paytmpayments.com/';
         }else{
-        $PAYTM_DOMAIN_THEIA = 'https://securegw-stage.paytm.in/';
+        $PAYTM_DOMAIN_THEIA = 'https://securestage.paytmpayments.com/';
         }
         $isValidChecksum = PaytmChecksum::verifySignature($paramList, $PAYTM_MERCHANT_KEY, $paytmChecksum);
         //$isValidChecksum = verifychecksum_e($paramList, $PAYTM_MERCHANT_KEY, $paytmChecksum);
